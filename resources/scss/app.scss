@@ -1,0 +1,80 @@
+@import "~bootstrap/scss/bootstrap";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    height: 100vh;
+}
+.dashboard {
+    a {
+        h1 {
+            transition: all 0.3s ease;
+        }
+        text-decoration: none;
+        color: white;
+
+        &:hover h1 {
+            color: orange;
+            scale: 1.1;
+        }
+    }
+}
+
+header {
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    ul {
+        list-style: none;
+        justify-content: flex-end;
+
+        li {
+            padding: 0 15px;
+
+            a {
+                text-decoration: none;
+                color: black;
+
+                &:hover {
+                    color: blue;
+                }
+            }
+        }
+    }
+}
+
+main {
+    .jumbotron {
+        background: url('https://images.pexels.com/photos/633409/pexels-photo-633409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        height: 400px;
+        background-position: center;
+    }
+    .welcome{
+        img {
+            max-height: 650px;
+            object-fit: cover;
+        }
+    } 
+}
+
+
+footer {
+    a {
+        &:hover {
+            color: orange;
+        }
+    }
+}
